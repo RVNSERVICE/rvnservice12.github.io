@@ -85,3 +85,147 @@ footer{padding:30px 6%;background:#030403;color:#778078;display:flex;justify-con
 .subscription-card>a{margin-top:auto;text-decoration:none;font-size:10px;font-weight:800;color:#117d2d;line-height:1.5}
 @media(max-width:1000px){.subscription-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-card{grid-template-columns:1fr}.product-art{min-height:190px}}
 @media(max-width:600px){.shop-subhead{display:block}.shop-subhead>p{margin-top:12px}.product-grid,.subscription-grid{grid-template-columns:1fr}.product-card{grid-template-columns:1fr}.product-art{min-height:190px}.product-info{padding:22px}.subscription-card{padding:22px}}
+/* RVN SERVICE — Direction artistique créative */
+:root {
+  --accent: #35ff68;
+  --accent2: #b9ffca;
+}
+
+body {
+  letter-spacing: -0.15px;
+}
+
+.nav {
+  border-bottom-color: rgba(53, 255, 104, 0.22);
+}
+
+.brand-mark {
+  color: var(--accent);
+  text-shadow: 0 0 22px rgba(53, 255, 104, 0.2);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 80% 35%,
+      rgba(53, 255, 104, 0.13),
+      transparent 38%
+    ),
+    linear-gradient(125deg, #030504 10%, #0a130d 100%);
+}
+
+.hero h1 {
+  font-weight: 900;
+  letter-spacing: -4px;
+  line-height: 0.94;
+}
+
+.hero h1 span {
+  text-shadow: 0 0 35px rgba(53, 255, 104, 0.16);
+}
+
+.eyebrow {
+  letter-spacing: 2.8px;
+}
+
+.btn {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn.primary {
+  box-shadow: 0 8px 28px rgba(53, 255, 104, 0.13);
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(53, 255, 104, 0.22);
+}
+
+.btn.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.collage-main {
+  border-color: rgba(53, 255, 104, 0.35);
+}
+
+.collage-small {
+  border-color: #080d09;
+}
+
+.section h2,
+.contact h2 {
+  font-weight: 900;
+  letter-spacing: -2.5px;
+}
+
+.services article,
+.offer,
+.testimonial,
+.product-card,
+.subscription-card {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.services article:hover,
+.offer:hover,
+.testimonial:hover,
+.product-card:hover,
+.subscription-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(53, 255, 104, 0.5);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item {
+  border-color: #26352a;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.045);
+}
+
+.whatsapp-float {
+  box-shadow: 0 0 0 6px rgba(53, 255, 104, 0.09),
+    0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: clamp(43px, 12vw, 58px);
+    letter-spacing: -2.8px;
+  }
+
+  .section h2,
+  .contact h2 {
+    letter-spacing: -1.8px;
+  }
+
+  .hero-points {
+    gap: 12px 18px;
+  }
+
+  .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
